@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		666A8C231D3EA201009F6DE6 /* LocationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 666A8C221D3EA201009F6DE6 /* LocationViewController.m */; };
+		666A8C251D3EB2E8009F6DE6 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 666A8C241D3EB2E7009F6DE6 /* MapKit.framework */; };
+		666A8C281D3ED9CB009F6DE6 /* Theatre.m in Sources */ = {isa = PBXBuildFile; fileRef = 666A8C271D3ED9CB009F6DE6 /* Theatre.m */; };
+		666A8C2A1D3EEA9E009F6DE6 /* bikeStation.png in Resources */ = {isa = PBXBuildFile; fileRef = 666A8C291D3EEA9E009F6DE6 /* bikeStation.png */; };
 		66B5F2501D3D613700149FE6 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 66B5F24F1D3D613700149FE6 /* main.m */; };
 		66B5F2531D3D613700149FE6 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 66B5F2521D3D613700149FE6 /* AppDelegate.m */; };
 		66B5F2561D3D613700149FE6 /* MasterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 66B5F2551D3D613700149FE6 /* MasterViewController.m */; };
@@ -19,6 +23,12 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		666A8C211D3EA201009F6DE6 /* LocationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LocationViewController.h; sourceTree = "<group>"; };
+		666A8C221D3EA201009F6DE6 /* LocationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LocationViewController.m; sourceTree = "<group>"; };
+		666A8C241D3EB2E7009F6DE6 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		666A8C261D3ED9CB009F6DE6 /* Theatre.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Theatre.h; sourceTree = "<group>"; };
+		666A8C271D3ED9CB009F6DE6 /* Theatre.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Theatre.m; sourceTree = "<group>"; };
+		666A8C291D3EEA9E009F6DE6 /* bikeStation.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bikeStation.png; sourceTree = "<group>"; };
 		66B5F24B1D3D613700149FE6 /* RottenMangoes.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RottenMangoes.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		66B5F24F1D3D613700149FE6 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		66B5F2511D3D613700149FE6 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -42,6 +52,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				666A8C251D3EB2E8009F6DE6 /* MapKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -51,6 +62,7 @@
 		66B5F2421D3D613700149FE6 = {
 			isa = PBXGroup;
 			children = (
+				666A8C241D3EB2E7009F6DE6 /* MapKit.framework */,
 				66B5F24D1D3D613700149FE6 /* RottenMangoes */,
 				66B5F24C1D3D613700149FE6 /* Products */,
 			);
@@ -67,6 +79,7 @@
 		66B5F24D1D3D613700149FE6 /* RottenMangoes */ = {
 			isa = PBXGroup;
 			children = (
+				666A8C291D3EEA9E009F6DE6 /* bikeStation.png */,
 				66B5F26E1D3D7C7300149FE6 /* Other */,
 				66B5F26D1D3D7C6600149FE6 /* View */,
 				66B5F26C1D3D7C6100149FE6 /* Controller */,
@@ -93,6 +106,8 @@
 				66B5F2691D3D7C1D00149FE6 /* Movie.m */,
 				66B5F26F1D3D88B600149FE6 /* MovieCell.h */,
 				66B5F2701D3D88B600149FE6 /* MovieCell.m */,
+				666A8C261D3ED9CB009F6DE6 /* Theatre.h */,
+				666A8C271D3ED9CB009F6DE6 /* Theatre.m */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -104,6 +119,8 @@
 				66B5F2551D3D613700149FE6 /* MasterViewController.m */,
 				66B5F2571D3D613700149FE6 /* DetailViewController.h */,
 				66B5F2581D3D613700149FE6 /* DetailViewController.m */,
+				666A8C211D3EA201009F6DE6 /* LocationViewController.h */,
+				666A8C221D3EA201009F6DE6 /* LocationViewController.m */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -186,6 +203,7 @@
 				66B5F2611D3D613700149FE6 /* LaunchScreen.storyboard in Resources */,
 				66B5F25E1D3D613700149FE6 /* Assets.xcassets in Resources */,
 				66B5F25C1D3D613700149FE6 /* Main.storyboard in Resources */,
+				666A8C2A1D3EEA9E009F6DE6 /* bikeStation.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -197,7 +215,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				66B5F2531D3D613700149FE6 /* AppDelegate.m in Sources */,
+				666A8C281D3ED9CB009F6DE6 /* Theatre.m in Sources */,
 				66B5F2561D3D613700149FE6 /* MasterViewController.m in Sources */,
+				666A8C231D3EA201009F6DE6 /* LocationViewController.m in Sources */,
 				66B5F2711D3D88B600149FE6 /* MovieCell.m in Sources */,
 				66B5F26A1D3D7C1D00149FE6 /* Movie.m in Sources */,
 				66B5F2501D3D613700149FE6 /* main.m in Sources */,
@@ -352,6 +372,7 @@
 				66B5F2671D3D613700149FE6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

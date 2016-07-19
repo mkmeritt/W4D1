@@ -54,6 +54,7 @@ NSString* reuseIdentifier = @"MovieCell";
                 for(NSDictionary *movieDict in resultDict[@"movies"]){
                     Movie *movie = [[Movie alloc] init];
                     movie.synopsis = movieDict[@"synopsis"];
+                    movie.title = movieDict[@"title"];
                     movie.imageURL = movieDict[@"posters"][@"thumbnail"];
                     movie.rating = movieDict[@"ratings"][@"critics_rating"];
                     [movies addObject:movie];

@@ -8,6 +8,8 @@
 
 #import <UIKit/UIKit.h>
 #import "Movie.h"
+#import "LocationViewController.h"
+
 @interface DetailViewController : UIViewController
 
 @property (strong, nonatomic) Movie *detailItem;

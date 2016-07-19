@@ -76,12 +76,19 @@
                                 </constraints>
                             </imageView>
                             <label clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" misplaced="YES" text="Detail view content goes here" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="6" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="Exw-r2-CUl">
-                                <rect key="frame" x="25" y="71" width="560" height="121"/>
+                                <rect key="frame" x="25" y="71" width="361" height="121"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <fontDescription key="fontDescription" type="system" size="system"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iRi-Or-7C5">
+                                <rect key="frame" x="394" y="64" width="186" height="128"/>
+                                <state key="normal" title="Location"/>
+                                <connections>
+                                    <segue destination="8TM-py-2SG" kind="show" identifier="showLocation" id="fsY-zC-hm8"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
@@ -93,7 +100,9 @@
                             <constraint firstAttribute="trailingMargin" secondItem="Exw-r2-CUl" secondAttribute="trailing" constant="-5" id="Td0-3G-b0E"/>
                             <constraint firstItem="GAO-Cl-Wes" firstAttribute="top" secondItem="0XM-y9-sOw" secondAttribute="bottom" constant="41" id="aFB-fS-M3t"/>
                             <constraint firstItem="Vwf-J7-l0W" firstAttribute="centerX" secondItem="svH-Pt-448" secondAttribute="centerX" id="bHF-hW-HKl"/>
+                            <constraint firstItem="iRi-Or-7C5" firstAttribute="trailing" secondItem="svH-Pt-448" secondAttribute="trailingMargin" id="hOl-Jo-HHL"/>
                             <constraint firstItem="0XM-y9-sOw" firstAttribute="leading" secondItem="Vwf-J7-l0W" secondAttribute="trailing" constant="-380" id="jW7-GI-kOf"/>
+                            <constraint firstItem="iRi-Or-7C5" firstAttribute="top" secondItem="SYR-Wa-9uf" secondAttribute="bottom" id="rPS-jj-qFX"/>
                             <constraint firstItem="Vwf-J7-l0W" firstAttribute="top" secondItem="SYR-Wa-9uf" secondAttribute="bottom" constant="136" id="xPR-4i-RHx"/>
                         </constraints>
                     </view>
@@ -108,6 +117,38 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="FJe-Yq-33r" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2497" y="121"/>
+        </scene>
+        <!--Location View Controller-->
+        <scene sceneID="65k-00-5BJ">
+            <objects>
+                <viewController id="8TM-py-2SG" customClass="LocationViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="WNV-HO-IwO"/>
+                        <viewControllerLayoutGuide type="bottom" id="38y-tN-Hd3"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Kzc-ag-2UV">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" showsUserLocation="YES" translatesAutoresizingMaskIntoConstraints="NO" id="hs3-QS-LBI">
+                                <rect key="frame" x="20" y="64" width="560" height="536"/>
+                            </mapView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="hs3-QS-LBI" firstAttribute="top" secondItem="WNV-HO-IwO" secondAttribute="bottom" id="H9w-9a-ges"/>
+                            <constraint firstItem="hs3-QS-LBI" firstAttribute="leading" secondItem="Kzc-ag-2UV" secondAttribute="leadingMargin" id="M5W-rQ-hOE"/>
+                            <constraint firstItem="38y-tN-Hd3" firstAttribute="top" secondItem="hs3-QS-LBI" secondAttribute="bottom" id="fzy-IW-7GY"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="hs3-QS-LBI" secondAttribute="trailing" id="qQs-o7-YLl"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="mapView" destination="hs3-QS-LBI" id="dDf-ig-zjM"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="MOh-32-jOK" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3241" y="121"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="Hch-VN-kCw">

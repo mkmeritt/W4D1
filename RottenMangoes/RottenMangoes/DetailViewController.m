@@ -35,6 +35,16 @@
     }
 }
 
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
+    if ([[segue identifier] isEqualToString:@"showLocation"]) {
+        
+        LocationViewController *controller = segue.destinationViewController;
+        
+        controller.movie = self.detailItem;
+        
+    }
+}
+
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.

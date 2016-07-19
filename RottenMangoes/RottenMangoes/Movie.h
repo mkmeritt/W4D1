@@ -13,6 +13,7 @@
 
 @property (nonatomic) NSString* synopsis;
 @property (nonatomic) NSString* rating;
+@property (nonatomic) NSString* title;
 @property (nonatomic) NSString* imageURL;
 
 @end
